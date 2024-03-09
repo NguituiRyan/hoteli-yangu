@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemak Hotel - Luxury Redefined</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: 'Suranna', serif;
+    }
+    .jumbotron {
+      background-color: rgb(211, 211, 211);
+      color: #343a40;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+	font-family: 'Suranna', serif;
+	background: #2c3e50;
+}
+.display-4,.lead{
+text-align: center;
+}
+.navtitle{
+  text-align: right;
+  color: white;
+}
+nav{
+	position: relative;
+	margin: 270px auto 0;
+  margin-top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:hover {
+  color: white;
+  text-underline-position: none;
+  text-underline-offset: none;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="hoteli.html">Pemak Hotel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="hoteli.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rooms.html">Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dining.html">Dining</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spa.html">Spa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+<nav class="fixed-top">
+      
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Rooms</a>
+  <a href="#">Dining</a>
+  <a href="#">Contact</a>
+  <div class="animation start-home"></div>
+  <span class="navtitle">Pemak Hotel</span>
+  
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1600x900/?hotel" class="d-block w-100" alt="Hotel Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x900/?luxury" class="d-block w-100" alt="Hotel Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x900/?travel" class="d-block w-100" alt="Hotel Image 3">
+    </div>
+    <!-- Add more carousel items as needed -->
+  </div>
+</div>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Pemak Hotel - Luxury Redefined</h1>
+    <p class="lead">Welcome to Pemak Hotel. Experience luxury like never before.</p>
+  </div>
+</div>
+
+<!-- Content for the Home Page -->
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white">
+  <div class="container">
+    <p>&copy; 2024 Pemak Hotel. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Carousel JS -->
+<script>
+  $('.carousel').carousel({
+    interval: 4000 // Change slide every 4 seconds
+  });
+</script>
+
+</body>
+</html>
